@@ -250,18 +250,35 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 // LECTURES
 
-// 287,460,000,000
-const diameter = 287_460_000_000;
-console.log(diameter);
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
 
-const price = 345_99;
-console.log(price);
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 3);
+console.log(2 ** 53 + 4);
 
-const transferFee1 = 15_00;
-const transferFee2 = 1_500;
+console.log(56456879546512316548975465312164n);
+console.log(BigInt(564568795));
 
-const PI = 3.14_15;
-console.log(PI);
+// operations
+console.log(10000n + 10000n);
+console.log(2365647846451164643266465n * 1000000000n);
+// console.log(Math.sqrt(16n));
 
-console.log(Number('230_000'));
-console.log(parseInt('230_000'));
+const huge = 45687984565976564456897986465645n;
+const num = 23;
+console.log(huge * BigInt(num));
+
+// exceptions
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n == 20);
+console.log(20n == '20');
+
+console.log(huge + ' is really big');
+
+// divisions
+console.log(11n / 3n);
+console.log(10 / 3);
