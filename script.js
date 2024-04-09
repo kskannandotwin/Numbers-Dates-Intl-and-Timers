@@ -250,35 +250,39 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 // LECTURES
 
-console.log(2 ** 53 - 1);
-console.log(Number.MAX_SAFE_INTEGER);
+// create a date
+/*
+const now = new Date();
+console.log(now);
 
-console.log(2 ** 53 + 1);
-console.log(2 ** 53 + 2);
-console.log(2 ** 53 + 3);
-console.log(2 ** 53 + 4);
+console.log(new Date('Tue Apr 09 2024 16:18:04'));
+console.log(new Date('December 24, 2015'));
 
-console.log(56456879546512316548975465312164n);
-console.log(BigInt(564568795));
+console.log(new Date(account1.movementsDates[0]));
 
-// operations
-console.log(10000n + 10000n);
-console.log(2365647846451164643266465n * 1000000000n);
-// console.log(Math.sqrt(16n));
+console.log(new Date(2037, 10, 19, 15, 23, 5));
+console.log(new Date(2037, 10, 31));
 
-const huge = 45687984565976564456897986465645n;
-const num = 23;
-console.log(huge * BigInt(num));
+console.log(new Date(0));
+console.log(new Date(3 * 24 * 60 * 60 * 1000));
+*/
 
-// exceptions
-console.log(20n > 15);
-console.log(20n === 20);
-console.log(typeof 20n);
-console.log(20n == 20);
-console.log(20n == '20');
+// working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
 
-console.log(huge + ' is really big');
+console.log(new Date(2142237180000));
 
-// divisions
-console.log(11n / 3n);
-console.log(10 / 3);
+console.log(Date.now());
+
+future.setFullYear(2040);
+console.log(future);
